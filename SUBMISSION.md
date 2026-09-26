@@ -124,6 +124,21 @@ matching requires the query terms to be present in an individual chunk. The
 next diagnostic should inspect candidate-list overlap and relevant IDs before
 changing retrieval behavior.
 
+## Outputs
+
+| Output | Location | Verified result |
+|---|---|---|
+| Persisted ASR transcripts | `data/callhome/transcripts/` | Timestamped transcript JSON files produced by the transcription pipeline; existing files are skipped on later runs unless `--force` is used. |
+| Speaker-aware chunks | `data/callhome/chunks/` | 621 chunks across 8 conversation files, with deterministic IDs, speaker IDs, timestamps, and text. |
+| Golden evaluation queries | `data/golden_queries.json` | 29 manually grounded queries whose relevant IDs were checked against actual chunk text. |
+| Evaluation report | `data/evaluation_report.json` & `evaluation_dashboard_updated.html` | Recorded lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
+| PostgreSQL chunk storage | `transcript_chunks` table | An ingestion verification run stored 237 chunks with 384-dimensional embeddings, zero null speakers, and zero invalid timestamps. This is an earlier recorded ingestion result, not a claim that all 621 current chunks were re-ingested. |
+
+Search output is printed to the terminal by `app.search`. Each ranked result
+includes the source file, speaker, start and end times, transcript text, and
+final score/rank. The database stores the ingested chunk and embedding data;
+it is not written to a repository output file.
+
 ## Limitations
 
 - The current chunk set contains 8 files rather than the original 10-file
