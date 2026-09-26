@@ -77,6 +77,11 @@ lexical retrieval using `websearch_to_tsquery` and `ts_rank_cd`. Semantic
 retrieval uses exact pgvector cosine distance. HNSW is documented as an
 optional scaling index, while exact search remains the quality baseline.
 
+Lexical retrieval keeps the strict query results first and uses a sanitized
+token-level `OR` fallback only when the strict result set is smaller than the
+requested candidate count. This improves coverage while preserving
+deterministic ordering and parameterized SQL.
+
 Hybrid retrieval independently gets lexical and semantic candidate lists and
 combines their ranks using Reciprocal Rank Fusion with default `k=60`. Raw
 lexical and cosine scores are not added because their scales are not
@@ -143,7 +148,7 @@ even when other relevant chunks are lower.
 | Persisted ASR transcripts | `data/callhome/transcripts/` | Timestamped transcript JSON files produced by the transcription pipeline; existing files are skipped on later runs unless `--force` is used. |
 | Speaker-aware chunks | `data/callhome/chunks/` | 621 chunks across 8 conversation files, with deterministic IDs, speaker IDs, timestamps, and text. `call_006` and `call_009` are not present in this output directory yet. |
 | Golden evaluation queries | `data/golden_queries.json` | 29 manually grounded queries whose relevant IDs were checked against actual chunk text. |
-| Evaluation report | `data/evaluation_report.json` and `data/evaluation_dashboard_updated.html` | Recorded lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
+| Evaluation report | `data/evaluation_report.json` and `data/evaluation_dashboard_latest.html` | Recorded lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
 | PostgreSQL chunk storage | `transcript_chunks` table | An ingestion verification run stored 237 chunks with 384-dimensional embeddings, zero null speakers, and zero invalid timestamps. This is an earlier recorded ingestion result, not a claim that all 621 current chunks were re-ingested. |
 
 Search output is printed to the terminal by `app.search`. Each ranked result

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import dataclass
 from typing import Any, Iterable
 
@@ -52,7 +53,7 @@ def lexical_search(connection, query: str, candidate_count: int) -> list[SearchR
     ``ts_rank_cd`` ranks the lexical candidates; its score is not combined
     directly with vector scores.
     """
-    sql = """
+    strict_sql = """
         SELECT chunk_id, source_file, speaker_id, start_time, end_time, text,
                ts_rank_cd(search_vector, websearch_to_tsquery('simple', %s)) AS score
         FROM transcript_chunks
@@ -62,8 +63,43 @@ def lexical_search(connection, query: str, candidate_count: int) -> list[SearchR
     """
     logger.info("Running lexical retrieval: candidates=%d", candidate_count)
     logger.debug("Lexical query text: %r", query)
-    rows = connection.execute(sql, (query, query, candidate_count)).fetchall()
-    results = _rows_to_results(rows)
+    strict_rows = connection.execute(
+        strict_sql, (query, query, candidate_count)
+    ).fetchall()
+    results = _rows_to_results(strict_rows)
+
+    if len(results) < candidate_count:
+        # Build the fallback expression from alphanumeric tokens only. The
+        # generated operator expression remains a parameter to to_tsquery;
+        # raw user input is never interpolated into SQL.
+        tokens = re.findall(r"[^\W_]+", query, flags=re.UNICODE)
+        if tokens:
+            relaxed_query = " | ".join(tokens)
+            relaxed_sql = """
+                SELECT chunk_id, source_file, speaker_id, start_time, end_time, text,
+                       ts_rank_cd(search_vector, to_tsquery('simple', %s)) AS score
+                FROM transcript_chunks
+                WHERE search_vector @@ to_tsquery('simple', %s)
+                  AND NOT (chunk_id = ANY(%s))
+                ORDER BY score DESC, chunk_id ASC
+                LIMIT %s
+            """
+            strict_ids = [result.chunk_id for result in results]
+            relaxed_rows = connection.execute(
+                relaxed_sql,
+                (relaxed_query, relaxed_query, strict_ids, candidate_count - len(results)),
+            ).fetchall()
+            relaxed_results = _rows_to_results(relaxed_rows)
+            results.extend(relaxed_results)
+            logger.info(
+                "Lexical OR fallback used: strict=%d fallback=%d tokens=%d",
+                len(strict_rows),
+                len(relaxed_results),
+                len(tokens),
+            )
+        else:
+            logger.debug("Lexical OR fallback skipped: query has no searchable tokens")
+
     logger.info("Lexical retrieval returned %d candidates", len(results))
     logger.debug("Lexical candidate IDs: %s", [result.chunk_id for result in results])
     return results

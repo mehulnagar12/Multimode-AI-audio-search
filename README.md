@@ -65,7 +65,9 @@ Speaker-aware time-based chunks
   up to 30 seconds when the gap is at most 1 second. It never crosses a
   speaker boundary and produces deterministic chunk IDs.
 - PostgreSQL FTS: `db/schema.sql` stores a generated `tsvector` and creates a
-  GIN index. Lexical retrieval uses `websearch_to_tsquery` and `ts_rank_cd`.
+  GIN index. Lexical retrieval first uses strict `websearch_to_tsquery` and
+  `ts_rank_cd`; when strict matches are insufficient, it adds deterministic
+  token-level `OR` matches without duplicating strict results.
 - pgvector: transcript embeddings are stored as cosine-search vectors of
   dimension 384. Exact cosine search remains available as the quality
   baseline; HNSW DDL is included as an optional commented index.
