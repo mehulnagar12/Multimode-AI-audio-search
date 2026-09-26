@@ -1,19 +1,16 @@
-# Setup Guide
+# AI Audio Search — Setup Guide
 
-This guide prepares the local environment for the CALLHOME transcription,
+This guide prepares the environment for the two-speaker audio transcription,
 chunking, PostgreSQL ingestion, retrieval, and evaluation pipeline.
 
-## 1. Open the project
+Run the commands from the repository root. The repository uses
+`data/callhome/` as the local directory for the downloaded source dataset.
 
-Change into the repository directory. For example:
-
-```powershell
-cd path/to/repository
-```
-
-## 2. Create and activate a Python environment
+## 1. Create a Python environment
 
 Python 3.10 or newer is supported.
+
+Windows PowerShell:
 
 ```powershell
 py -3.10 -m venv .venv
@@ -21,151 +18,164 @@ py -3.10 -m venv .venv
 python --version
 ```
 
-If PowerShell blocks activation, run PowerShell with an appropriate execution
-policy or activate the environment using its `activate.bat` script.
+macOS/Linux:
 
-## 3. Install Python dependencies
-
-```powershell
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+```bash
+python3.10 -m venv .venv
+source .venv/bin/activate
+python --version
 ```
 
-The dependency installation provides:
+## 2. Install dependencies
 
-- faster-whisper for local transcription;
-- sentence-transformers for local embeddings;
-- psycopg for PostgreSQL connections;
-- pgvector Python support;
-- Hugging Face datasets support for the existing download utility.
+Windows PowerShell and macOS/Linux:
+
+```text
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+On macOS/Linux, use `python3` instead of `python` if that is the active
+interpreter name.
+
+## 3. Obtain the dataset, if it is not already present
+
+The source is the gated `talkbank/callhome` dataset. You need approved
+Hugging Face access and an `HF_TOKEN`; do not commit the token.
+
+Windows PowerShell:
+
+```powershell
+$env:HF_TOKEN = "YOUR_HUGGINGFACE_TOKEN"
+python Tools/download_callhome_samples.py
+```
+
+macOS/Linux:
+
+```bash
+export HF_TOKEN="YOUR_HUGGINGFACE_TOKEN"
+python3 Tools/download_callhome_samples.py
+```
+
+The utility downloads the first 10 samples into `data/callhome/audio/` and
+`data/callhome/metadata/`. Do not rerun it over a dataset you need to preserve
+without checking its overwrite behavior.
 
 ## 4. Prepare a local faster-whisper model
 
-The transcription code expects a local CTranslate2 faster-whisper model
-directory and does not download a model implicitly.
+The transcription code expects a local CTranslate2 model and does not download
+one implicitly.
 
-Example using the Hugging Face CLI:
+Windows PowerShell:
 
 ```powershell
 hf download Systran/faster-whisper-small `
   --local-dir models/faster-whisper-small
 ```
 
-If `hf` is not on `PATH`, use the executable in the active environment:
+macOS/Linux:
 
-```powershell
-& ".\.venv\Scripts\hf.exe" download Systran/faster-whisper-small `
+```bash
+hf download Systran/faster-whisper-small \
   --local-dir models/faster-whisper-small
 ```
 
-The model directory should contain files such as `config.json`, `model.bin`,
-and tokenizer files.
+If `hf` is not on `PATH`, use the executable inside `.venv` (`.venv/Scripts/hf.exe`
+on Windows or `.venv/bin/hf` on macOS/Linux). The model directory should
+contain files such as `config.json`, `model.bin`, and tokenizer files.
 
 ## 5. Prepare PostgreSQL and pgvector
 
-Install PostgreSQL and ensure the `vector` server extension is installed for
-the exact PostgreSQL version being used. The Python `pgvector` package alone is
-not sufficient.
-
-Verify availability in pgAdmin Query Tool:
+Install PostgreSQL and the `vector` server extension for the PostgreSQL
+version in use. The Python `pgvector` package alone is not sufficient.
 
 ```sql
 SELECT name, default_version, installed_version
 FROM pg_available_extensions
 WHERE name = 'vector';
-```
 
-If the extension is available but not installed in the target database:
-
-```sql
 CREATE EXTENSION vector;
 ```
 
-The schema also creates the `transcript_chunks` table and GIN full-text index.
+Run `CREATE EXTENSION` in the target database if the extension is available but
+not yet installed. The project schema creates the `transcript_chunks` table
+and its GIN full-text index.
 
 ## 6. Configure database credentials
 
-Use the same host, port, user, password, and database that work in pgAdmin.
-Do not commit credentials to the repository.
+Use credentials for the PostgreSQL instance that you can access. Do not commit
+credentials.
+
+Windows PowerShell:
 
 ```powershell
 $env:DATABASE_URL = "postgresql://postgres:YOUR_PASSWORD@localhost:5432/YOUR_DATABASE"
 ```
 
-If the password contains URL-special characters, use separate variables:
+macOS/Linux:
 
-```powershell
-Remove-Item Env:DATABASE_URL -ErrorAction SilentlyContinue
-$env:PGHOST = "localhost"
-$env:PGPORT = "5432"
-$env:PGDATABASE = "YOUR_DATABASE"
-$env:PGUSER = "postgres"
-$env:PGPASSWORD = "YOUR_PASSWORD"
+```bash
+export DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@localhost:5432/YOUR_DATABASE"
 ```
+
+If the password contains URL-special characters, configure `PGHOST`,
+`PGPORT`, `PGDATABASE`, `PGUSER`, and `PGPASSWORD` separately instead.
 
 ## 7. Verify the setup
 
-Check the ASR model path:
+Check the model path:
 
-```powershell
-Test-Path models/faster-whisper-small/config.json
+```text
+models/faster-whisper-small/config.json
 ```
 
-Check PostgreSQL reachability:
+Check PostgreSQL connectivity with your platform's client, then run tests:
 
-```powershell
-Test-NetConnection localhost -Port 5432
-```
-
-Run the unit tests:
-
-```powershell
+```text
 python -m unittest discover -s tests -v
 ```
 
-## 8. Run the application pipeline
+Use `python3` on macOS/Linux when required.
 
-Transcribe all WAV files while skipping existing transcripts:
+## 8. Run the pipeline
 
-```powershell
-python -m transcription.pipeline `
-  --data-root data/callhome `
-  --model-path models/faster-whisper-small `
-  --device cpu `
-  --compute-type int8
+Transcribe all WAV files while skipping existing transcripts. This command
+will process currently missing `call_006` and `call_009` files when their
+transcripts do not exist:
+
+```text
+python -m transcription.pipeline --data-root data/callhome --model-path models/faster-whisper-small --device cpu --compute-type int8
 ```
 
-Create searchable chunks:
+Create chunks:
 
-```powershell
-python -m transcription.chunk_pipeline `
-  --data-root data/callhome
+```text
+python -m transcription.chunk_pipeline --data-root data/callhome
 ```
 
-Generate embeddings and ingest chunks into PostgreSQL:
+Ingest embeddings and metadata into PostgreSQL:
 
-```powershell
-python .\ingest_chunks.py `
-  --chunks-dir data/callhome/chunks `
-  --schema db/schema.sql
+```text
+python ingest_chunks.py --chunks-dir data/callhome/chunks --schema db/schema.sql
 ```
 
-Run a search:
+Search:
 
-```powershell
+```text
 python -m app.search "rolling kayak" --mode hybrid --top-k 5
 ```
 
-Run evaluation:
+Evaluate:
 
-```powershell
-python -m eval.evaluate `
-  --queries data/golden_queries.json `
-  --candidate-count 20 `
-  --report data/evaluation_report.json
+```text
+python -m eval.evaluate --queries data/golden_queries.json --candidate-count 20 --report data/evaluation_report.json
 ```
 
-## Important output locations
+On macOS/Linux, replace `python` with `python3` where needed. On Windows
+PowerShell, the same commands can be entered as one line or split with the
+PowerShell backtick continuation character.
+
+## Output locations
 
 - Transcripts: `data/callhome/transcripts/`
 - Chunks: `data/callhome/chunks/`

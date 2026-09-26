@@ -1,1 +1,6 @@
-myvenv
+# Local Python environments
+.venv/
+myvenv/
+
+# Downloaded local ASR models
+models/

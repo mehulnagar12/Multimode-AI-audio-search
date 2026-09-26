@@ -1,6 +1,6 @@
 # Coding Agent Disclosure
 
-This project was developed with coding-agent assistance. The agent was
+This project was developed with coding-agent assistance (CODEX). The agent was
 directed incrementally using the task prompts and skill instructions archived
 in the `prompt/` folder.
 

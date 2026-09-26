@@ -1,4 +1,4 @@
-# Local Hybrid Search — Submission
+# AI Audio Search — Submission
 
 ## Solution overview
 
@@ -8,13 +8,16 @@ the dataset's provided speaker intervals, converted into deterministic
 speaker-aware chunks, embedded locally, and stored in PostgreSQL with both
 full-text and vector-search representations.
 
-The current persisted evaluation artifacts contain 621 chunks from 8
-conversations. The golden query set contains 29 manually grounded queries.
+The source dataset contains 10 conversations. The current persisted
+evaluation artifacts contain 621 chunks from 8 conversations; `call_006` and
+`call_009` have audio and metadata but no transcript or chunk output yet. The
+golden query set contains 29 manually grounded queries over the current
+8-conversation artifact set.
 
 ## Engineering design
 
 ```text
-WAV +  metadata
+WAV + metadata
         |
         v
 faster-whisper ASR
@@ -101,7 +104,7 @@ compatible.
 | Persist timestamped local transcripts | Implemented; transcript JSON is written per WAV |
 | Preserve provided speaker information | Implemented with temporal-overlap alignment |
 | Produce deterministic speaker-aware chunks | Implemented and tested |
-| Store text, metadata, and embeddings in PostgreSQL | Implemented; an earlier ingestion run verified 237 rows and 384-dimensional vectors |
+| Store text, metadata, and embeddings in PostgreSQL | Implemented; an earlier ingestion run verified 237 rows and 384-dimensional vectors. The current 621-chunk artifact set requires a new full ingestion run for matching DB coverage. |
 | Support lexical, semantic, and hybrid retrieval | Implemented with CLI output containing file, speaker, timestamps, text, score, and rank |
 | Evaluate independently with Recall@1/3/5 | Implemented and run against 29 queries |
 | Avoid unmeasured claims | Followed; production latency and speech-quality metrics remain unmeasured |
@@ -120,18 +123,27 @@ Recall values are macro-averages across queries.
 Hybrid did not provide measurable improvement over semantic retrieval in this
 run. The likely issue is lexical candidate coverage: several queries describe
 information distributed across multiple chunks, while PostgreSQL full-text
-matching requires the query terms to be present in an individual chunk. The
-next diagnostic should inspect candidate-list overlap and relevant IDs before
-changing retrieval behavior.
+matching requires the query terms to be present in an individual chunk. More
+specifically, the schema and retrieval code use the `simple` text-search
+configuration, which keeps stop words and does not stem terms, while
+`websearch_to_tsquery` requires every query word to match. All 12 semantic
+queries in the recorded report had zero lexical hits, so hybrid collapsed to
+semantic retrieval.
+
+The semantic MRR of 0.8632 alongside Recall@1 of 0.2713 is consistent. MRR
+only measures the first relevant result's rank; Recall@1 measures how many of
+all relevant chunks appear in the first result. Twenty-eight of 29 queries
+have multiple relevant chunks, so the first relevant chunk can rank highly
+even when other relevant chunks are lower.
 
 ## Outputs
 
 | Output | Location | Verified result |
 |---|---|---|
 | Persisted ASR transcripts | `data/callhome/transcripts/` | Timestamped transcript JSON files produced by the transcription pipeline; existing files are skipped on later runs unless `--force` is used. |
-| Speaker-aware chunks | `data/callhome/chunks/` | 621 chunks across 8 conversation files, with deterministic IDs, speaker IDs, timestamps, and text. |
+| Speaker-aware chunks | `data/callhome/chunks/` | 621 chunks across 8 conversation files, with deterministic IDs, speaker IDs, timestamps, and text. `call_006` and `call_009` are not present in this output directory yet. |
 | Golden evaluation queries | `data/golden_queries.json` | 29 manually grounded queries whose relevant IDs were checked against actual chunk text. |
-| Evaluation report | `data/evaluation_report.json` & `evaluation_dashboard_updated.html` | Recorded lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
+| Evaluation report | `data/evaluation_report.json` and `data/evaluation_dashboard_updated.html` | Recorded lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
 | PostgreSQL chunk storage | `transcript_chunks` table | An ingestion verification run stored 237 chunks with 384-dimensional embeddings, zero null speakers, and zero invalid timestamps. This is an earlier recorded ingestion result, not a claim that all 621 current chunks were re-ingested. |
 
 Search output is printed to the terminal by `app.search`. Each ranked result
@@ -141,17 +153,16 @@ it is not written to a repository output file.
 
 ## Limitations
 
-- The current chunk set contains 8 files rather than the original 10-file
-  target.
+- The source dataset contains 10 conversations, but the current transcript and
+  chunk outputs contain only 8. The missing conversations are `call_006` and
+  `call_009`; rerunning transcription and chunking will update the artifacts
+  and invalidate the recorded counts and evaluation coverage.
 - ASR recognition errors affect both exact keyword and semantic retrieval.
 - The golden set is small and manually labeled, so results are directional.
 - Topic boundaries can split relevant context across chunks.
 - Hybrid retrieval currently does not outperform semantic retrieval.
 - The database must have the pgvector server extension installed separately
   from the Python package.
-- Tests are implemented, but a complete test run was not verified in the
-  agent environment because its Python launcher referenced a missing Python
-  executable.
 
 Additional production metrics should include p50/p95/p99 query latency,
 throughput, ingestion throughput, embedding and transcription latency, index
