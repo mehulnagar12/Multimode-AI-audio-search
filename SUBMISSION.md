@@ -1,9 +1,9 @@
-# CALLHOME Local Hybrid Search PoC — Submission
+# Local Hybrid Search — Submission
 
 ## Solution overview
 
 This project implements a local-first searchable transcript pipeline for
-CALLHOME two-speaker conversations. Audio is transcribed locally, aligned to
+two-speaker conversations. Audio is transcribed locally, aligned to
 the dataset's provided speaker intervals, converted into deterministic
 speaker-aware chunks, embedded locally, and stored in PostgreSQL with both
 full-text and vector-search representations.
@@ -14,7 +14,7 @@ conversations. The golden query set contains 29 manually grounded queries.
 ## Engineering design
 
 ```text
-WAV + CALLHOME metadata
+WAV +  metadata
         |
         v
 faster-whisper ASR
@@ -50,7 +50,7 @@ Deterministic speaker-aware chunks
 `faster-whisper` generates timestamped ASR segments. The transcript is
 persisted to JSON so search and evaluation do not retranscribe audio.
 
-CALLHOME metadata contains timestamp arrays and speaker labels. Each ASR
+Metadata contains timestamp arrays and speaker labels. Each ASR
 segment is assigned to the metadata speaker interval with the greatest
 temporal overlap. Ties are resolved deterministically by metadata order.
 No diarization model is run because speaker annotations are already supplied as
@@ -83,7 +83,7 @@ compatible.
 
 - Local ASR and embeddings avoid sending audio or transcript text to hosted
   services and make repeated search inexpensive.
-- Existing CALLHOME speaker intervals are more appropriate than adding a
+- Existing speaker intervals are more appropriate than adding a
   second diarization decision to already annotated data.
 - Speaker-aware time chunks preserve provenance and make result timestamps
   directly actionable.
@@ -150,7 +150,7 @@ stage-specific prompts and constraints, including:
 
 - inspect the local dataset and verify metadata before implementation;
 - do not download or modify the dataset during inspection;
-- use existing CALLHOME speaker intervals instead of adding diarization;
+- use existing speaker intervals instead of adding diarization;
 - persist transcripts and deterministic chunks;
 - use PostgreSQL, pgvector, local sentence-transformers embeddings, and RRF;
 - add focused deterministic tests and visible logging;
