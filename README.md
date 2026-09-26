@@ -68,12 +68,12 @@ Speaker-aware time-based chunks
 - RRF: `app/retrieval.py` combines independently ranked lexical and semantic
   candidate lists using `1 / (k + rank)`, with default `k=60`. Raw lexical and
   cosine scores are not added together.
-
-CALLHOME already provides verified timestamped speaker intervals. That ground
-truth is used directly instead of running a diarization model, avoiding
-unnecessary model cost and avoiding a second source of speaker-label error.
-For production audio without speaker labels, a diarization stage such as
-pyannote.audio could produce speaker intervals before ASR alignment.
+- Dataset: the CALLHOME two-speaker conversations are used because they provide
+  real conversational audio together with verified speaker intervals and
+  timestamps, allowing speaker-aware alignment without adding diarization to
+  this proof of concept. For production audio without speaker labels, a
+  diarization stage such as `pyannote.audio` could produce speaker intervals
+  before ASR alignment.
 
 ## Evaluation
 
@@ -96,32 +96,16 @@ than a production-quality benchmark. Hybrid did not add measurable benefit in
 this run. Possible additional metrics include nDCG, precision@K, hit rate, and
 per-conversation coverage.
 
-## Production metrics to collect
-
-- Retrieval: Recall@K, MRR/nDCG, p50/p95/p99 query latency, throughput, and
-  error rate.
-- Ingestion: ingestion throughput, embedding latency, transcription latency,
-  index-build time, and database/index size.
-- Speech quality: WER for transcription and DER when diarization is used.
-- Vector quality: ANN recall against exact search at matching K values.
-
-## Scaling
-
-Exact pgvector cosine search is the quality baseline and is appropriate for a
-small corpus. HNSW can be enabled for larger collections to reduce latency at
-the cost of index build time, memory, and potentially lower recall. ANN recall
-should be measured against exact search before choosing production parameters.
-
 ## Commands
 
-Run commands from `D:\Me\g2` with the Python environment activated.
+Run commands from the repository root with the Python environment activated.
 
 ### Transcribe all WAV files, skipping existing transcripts
 
 ```powershell
 python -m transcription.pipeline `
-  --data-root D:\Me\g2\data\callhome `
-  --model-path D:\Me\g2\models\faster-whisper-small `
+  --data-root data/callhome `
+  --model-path models/faster-whisper-small `
   --device cpu `
   --compute-type int8
 ```
@@ -129,7 +113,7 @@ python -m transcription.pipeline `
 Check generated transcripts in:
 
 ```text
-D:\Me\g2\data\callhome\transcripts\
+data/callhome/transcripts/
 ```
 
 Use `--force` to retranscribe existing files.
@@ -138,13 +122,13 @@ Use `--force` to retranscribe existing files.
 
 ```powershell
 python -m transcription.chunk_pipeline `
-  --data-root D:\Me\g2\data\callhome
+  --data-root data/callhome
 ```
 
 Check generated chunks in:
 
 ```text
-D:\Me\g2\data\callhome\chunks\
+data/callhome/chunks/
 ```
 
 ### Ingest into PostgreSQL
@@ -152,8 +136,8 @@ D:\Me\g2\data\callhome\chunks\
 ```powershell
 $env:DATABASE_URL = "postgresql://postgres:YOUR_PASSWORD@localhost:5432/YOUR_DATABASE"
 python .\ingest_chunks.py `
-  --chunks-dir D:\Me\g2\data\callhome\chunks `
-  --schema D:\Me\g2\db\schema.sql
+  --chunks-dir data/callhome/chunks `
+  --schema db/schema.sql
 ```
 
 PostgreSQL output is stored in the configured database, in the
@@ -174,7 +158,7 @@ python -m app.search "kayak safety" --mode hybrid --top-k 5
 Search results are printed to the terminal. Persisted source chunks remain in:
 
 ```text
-D:\Me\g2\data\callhome\chunks\
+data/callhome/chunks/
 ```
 
 Use `--candidate-count` to control candidates per retriever, `--rrf-k` to
@@ -189,22 +173,22 @@ python -m unittest discover -s tests -v
 Test files are located in:
 
 ```text
-D:\Me\g2\tests\
+tests/
 ```
 
 ### Evaluation
 
 ```powershell
 python -m eval.evaluate `
-  --queries D:\Me\g2\data\golden_queries.json `
+  --queries data/golden_queries.json `
   --candidate-count 20 `
-  --report D:\Me\g2\data\evaluation_report.json
+  --report data/evaluation_report.json
 ```
 
 Check the generated evaluation report at:
 
 ```text
-D:\Me\g2\data\evaluation_report.json
+data/evaluation_report.json
 ```
 
 ## Current limitations

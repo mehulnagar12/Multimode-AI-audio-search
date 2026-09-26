@@ -5,8 +5,10 @@ chunking, PostgreSQL ingestion, retrieval, and evaluation pipeline.
 
 ## 1. Open the project
 
+Change into the repository directory. For example:
+
 ```powershell
-cd D:\Me\g2
+cd path/to/repository
 ```
 
 ## 2. Create and activate a Python environment
@@ -46,14 +48,14 @@ Example using the Hugging Face CLI:
 
 ```powershell
 hf download Systran/faster-whisper-small `
-  --local-dir D:\Me\g2\models\faster-whisper-small
+  --local-dir models/faster-whisper-small
 ```
 
 If `hf` is not on `PATH`, use the executable in the active environment:
 
 ```powershell
 & ".\.venv\Scripts\hf.exe" download Systran/faster-whisper-small `
-  --local-dir D:\Me\g2\models\faster-whisper-small
+  --local-dir models/faster-whisper-small
 ```
 
 The model directory should contain files such as `config.json`, `model.bin`,
@@ -106,7 +108,7 @@ $env:PGPASSWORD = "YOUR_PASSWORD"
 Check the ASR model path:
 
 ```powershell
-Test-Path D:\Me\g2\models\faster-whisper-small\config.json
+Test-Path models/faster-whisper-small/config.json
 ```
 
 Check PostgreSQL reachability:
@@ -127,8 +129,8 @@ Transcribe all WAV files while skipping existing transcripts:
 
 ```powershell
 python -m transcription.pipeline `
-  --data-root D:\Me\g2\data\callhome `
-  --model-path D:\Me\g2\models\faster-whisper-small `
+  --data-root data/callhome `
+  --model-path models/faster-whisper-small `
   --device cpu `
   --compute-type int8
 ```
@@ -137,15 +139,15 @@ Create searchable chunks:
 
 ```powershell
 python -m transcription.chunk_pipeline `
-  --data-root D:\Me\g2\data\callhome
+  --data-root data/callhome
 ```
 
 Generate embeddings and ingest chunks into PostgreSQL:
 
 ```powershell
 python .\ingest_chunks.py `
-  --chunks-dir D:\Me\g2\data\callhome\chunks `
-  --schema D:\Me\g2\db\schema.sql
+  --chunks-dir data/callhome/chunks `
+  --schema db/schema.sql
 ```
 
 Run a search:
@@ -158,15 +160,15 @@ Run evaluation:
 
 ```powershell
 python -m eval.evaluate `
-  --queries D:\Me\g2\data\golden_queries.json `
+  --queries data/golden_queries.json `
   --candidate-count 20 `
-  --report D:\Me\g2\data\evaluation_report.json
+  --report data/evaluation_report.json
 ```
 
 ## Important output locations
 
-- Transcripts: `D:\Me\g2\data\callhome\transcripts\`
-- Chunks: `D:\Me\g2\data\callhome\chunks\`
-- Golden queries: `D:\Me\g2\data\golden_queries.json`
-- Evaluation report: `D:\Me\g2\data\evaluation_report.json`
+- Transcripts: `data/callhome/transcripts/`
+- Chunks: `data/callhome/chunks/`
+- Golden queries: `data/golden_queries.json`
+- Evaluation report: `data/evaluation_report.json`
 - Database table: `transcript_chunks`
