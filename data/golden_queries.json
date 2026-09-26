@@ -1,0 +1,272 @@
+[
+  {
+    "query": "sea kayak rolling",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_a37cab7073d4e5208c2e",
+      "chunk_44d091f6f38db5894694",
+      "chunk_503dd44f9abdffa7ab53"
+    ]
+  },
+  {
+    "query": "How do you get back into an inflatable kayak after falling out?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_66a30a4c36fc7be22d75",
+      "chunk_7cb82411a5a9d27139ee",
+      "chunk_a15043f05a3084fe0b86"
+    ]
+  },
+  {
+    "query": "class three river kayaking waves",
+    "type": "mixed",
+    "relevant_chunk_ids": [
+      "chunk_66a30a4c36fc7be22d75",
+      "chunk_59714046c2e2e7d1b6a5",
+      "chunk_2c3ed5c6059d2ffab36e",
+      "chunk_fc67510bbe5bcd5804ae"
+    ]
+  },
+  {
+    "query": "What happened during the Trinity River camping trip?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_952ef984054ef9d243e6",
+      "chunk_b23541bce6ba3a9b124a",
+      "chunk_503dd44f9abdffa7ab53"
+    ]
+  },
+  {
+    "query": "blind date Grace France",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_18efdf00ece224820218"
+    ]
+  },
+  {
+    "query": "What does the speaker think makes a relationship work instead of finding perfection?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_182b4b159906a5f0e11d",
+      "chunk_8207525c5925c5c94ebb",
+      "chunk_de57bc86b0be9a99dd37"
+    ]
+  },
+  {
+    "query": "towels new house",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_75f62731c5ceb1b27500",
+      "chunk_ceef8c52fe0c58f1b16c",
+      "chunk_0cd3c666c8d91717c26f"
+    ]
+  },
+  {
+    "query": "Why is the baby being taken to a specialist?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_e2aa4fc79de3d19329e1",
+      "chunk_ec02a405d81fa5b44b15",
+      "chunk_e91ff2820a967369c51a",
+      "chunk_27c4b6b110ffd414271f"
+    ]
+  },
+  {
+    "query": "constipated",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_27c4b6b110ffd414271f",
+      "chunk_2dffcb167053a2bfd623"
+    ]
+  },
+  {
+    "query": "Why is the mother considering a trip even though childcare is difficult?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_65f3b02a6b6f896bbcb3",
+      "chunk_63163bbd60f02bc2e328",
+      "chunk_717c99cf46257afae0ec",
+      "chunk_19104dc1dc87f4bce550"
+    ]
+  },
+  {
+    "query": "job applications interview night classes",
+    "type": "mixed",
+    "relevant_chunk_ids": [
+      "chunk_498769d1037173d23c1a",
+      "chunk_869ae587def102044498",
+      "chunk_e13e98d5752a783ed9b2"
+    ]
+  },
+  {
+    "query": "What caused the metro rail disruption and someone to be laid off?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_e13e98d5752a783ed9b2",
+      "chunk_ce53a99d1ab9c8df11e1",
+      "chunk_5fdbbe1eafbcd4da1ccf"
+    ]
+  },
+  {
+    "query": "car transmission trouble in reverse",
+    "type": "mixed",
+    "relevant_chunk_ids": [
+      "chunk_5f393e13014100c37250",
+      "chunk_35a37645c63fe473fa87",
+      "chunk_42beb56ea18f1094a50c",
+      "chunk_16f6a96978443b1286b6",
+      "chunk_f5a95491a1ffdf233001",
+      "chunk_326cb83e0a677898f1d6"
+    ]
+  },
+  {
+    "query": "incision peroxide vitamin E",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_9c531f73640333344029",
+      "chunk_222a97411e4a6008ad78",
+      "chunk_36ec1ef46a6ea077476c"
+    ]
+  },
+  {
+    "query": "Why was the speaker frightened after the fall?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_39593026b9880eba5876",
+      "chunk_6c22dbc74b5d4f3f18de",
+      "chunk_5b247651377c241d5088",
+      "chunk_aab5e815db4aa9440253"
+    ]
+  },
+  {
+    "query": "air mail book letter Hanukkah",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_6e5ec7a13cbf9c851bcd",
+      "chunk_581aea22759c97b58c9d",
+      "chunk_038234da2457ea5cbaf9",
+      "chunk_d5a98a209e0c35cb51c3"
+    ]
+  },
+  {
+    "query": "What happened while people were waiting to use a phone?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_630653f6b438af1affb0",
+      "chunk_041effe6b9245660372d"
+    ]
+  },
+  {
+    "query": "yelling throwing things",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_0021228a9458ca747e1b",
+      "chunk_b9aeebda2acb56f7aea5",
+      "chunk_cfbcc4ca44238ced1686"
+    ]
+  },
+  {
+    "query": "lawn vacation money",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_401097ee0546d182c1e8",
+      "chunk_53d4266ce109720bb713",
+      "chunk_cea634c1c1e56c6b448e",
+      "chunk_3aee51d1ab3f2af887e0"
+    ]
+  },
+  {
+    "query": "What kind of dog is the new dog and how does it behave?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_be99d86a2339e596ebf7",
+      "chunk_8fa9b6603457634c519c",
+      "chunk_b6f31db1d01a0a445469"
+    ]
+  },
+  {
+    "query": "third grade class size",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_5bc6fa8fb9be0ba1f452",
+      "chunk_f42c16a8c8f08187b460",
+      "chunk_6aa4ab59bf34ba0b8e1c",
+      "chunk_3811f19f84ab87c9ca2b",
+      "chunk_17d711573efd1e9f8215"
+    ]
+  },
+  {
+    "query": "flea bites in the kindergarten classroom",
+    "type": "mixed",
+    "relevant_chunk_ids": [
+      "chunk_06a5cd9268d1d4634ee5",
+      "chunk_7cf320768f426e3c28e6",
+      "chunk_f4fdbcdec2321f394c88"
+    ]
+  },
+  {
+    "query": "phone relationship moving to Chicago",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_bb1730d4be842551dbbc",
+      "chunk_e57f7c645f8d6f1c9861"
+    ]
+  },
+  {
+    "query": "Why did the speaker lose interest in the man she had been talking to?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_001f41c5a2fa83f17ccc",
+      "chunk_c8610cfba57fce2a3915",
+      "chunk_3c2eabd69e34a769a0bb"
+    ]
+  },
+  {
+    "query": "painting a room and having a rug delivered",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_77a1460819bbcc685bd2",
+      "chunk_ca32fa307455f687486d"
+    ]
+  },
+  {
+    "query": "married students having affairs in the same class",
+    "type": "keyword",
+    "relevant_chunk_ids": [
+      "chunk_979ebb7544918526597f",
+      "chunk_bedfef58d46f1950dfa1",
+      "chunk_b8fba49fbb7b8bbd3539",
+      "chunk_4f06063d103f8d78467f"
+    ]
+  },
+  {
+    "query": "What courses did the student take during the summer?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_09f380ebe7f351f21875",
+      "chunk_9a50a769b77e4cc01e9b",
+      "chunk_264b8ed164136965724c",
+      "chunk_833b3551fc3bd570da90"
+    ]
+  },
+  {
+    "query": "back injury physical therapy doctor",
+    "type": "mixed",
+    "relevant_chunk_ids": [
+      "chunk_896006fa3e7083e1ffec",
+      "chunk_06c76a3b38142d3239a3",
+      "chunk_3c1c03e04e81b7412989",
+      "chunk_e139f6041e997f3440c2"
+    ]
+  },
+  {
+    "query": "What happened on the difficult anatomy and physiology test?",
+    "type": "semantic",
+    "relevant_chunk_ids": [
+      "chunk_5453f681450750954645",
+      "chunk_205384cc52554b1acd6f",
+      "chunk_5becde55c144d818a74d",
+      "chunk_73e2e8e4a2d12952fec0"
+    ]
+  }
+]

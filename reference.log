@@ -1,0 +1,191 @@
+---- Transcribing audio files Each file taking 5 mins so transcribing 5 files.----
+2026-09-26 10:52:00,981 | INFO | __main__ | Starting CALLHOME transcription and speaker alignment
+2026-09-26 10:52:00,981 | INFO | __main__ | Data root: D:\Me\g2\data\callhome
+2026-09-26 10:52:00,981 | INFO | __main__ | Files to process: call_000.wav, call_002.wav, call_003.wav, call_007.wav, call_008.wav
+2026-09-26 10:52:17,524 | INFO | transcription.transcribe | Loaded faster-whisper model: path=D:\Me\g2\models\faster-whisper-small device=cpucompute_type=int8
+2026-09-26 10:52:17,525 | INFO | __main__ | Starting file: call_000.wav
+2026-09-26 10:52:17,555 | INFO | transcription.metadata | Loaded metadata: 115 intervals from D:\Me\g2\data\callhome\metadata\call_000.json
+2026-09-26 10:52:17,555 | INFO | transcription.transcribe | Transcribing audio: D:\Me\g2\data\callhome\audio\call_000.wav
+2026-09-26 10:52:19,314 | INFO | faster_whisper | Processing audio with duration 05:03.120
+2026-09-26 10:52:23,992 | INFO | faster_whisper | Detected language 'en' with probability 0.98
+2026-09-26 10:56:08,960 | INFO | transcription.transcribe | Transcription complete: 167 ASR segments from D:\Me\g2\data\callhome\audio\call_000.wav
+2026-09-26 10:56:08,986 | INFO | transcription.alignment | Aligned 167 ASR segments into 166 speaker segments; 1 had no speaker overlap
+2026-09-26 10:56:09,378 | INFO | __main__ | Persisted 166 aligned segments: D:\Me\g2\data\callhome\transcripts\call_000.json
+2026-09-26 10:56:09,380 | INFO | __main__ | Starting file: call_002.wav
+2026-09-26 10:56:09,402 | INFO | transcription.metadata | Loaded metadata: 116 intervals from D:\Me\g2\data\callhome\metadata\call_002.json
+2026-09-26 10:56:09,403 | INFO | transcription.transcribe | Transcribing audio: D:\Me\g2\data\callhome\audio\call_002.wav
+2026-09-26 10:56:11,844 | INFO | faster_whisper | Processing audio with duration 05:04.680
+2026-09-26 10:56:15,448 | INFO | faster_whisper | Detected language 'en' with probability 0.98
+2026-09-26 10:59:48,495 | INFO | transcription.transcribe | Transcription complete: 123 ASR segments from D:\Me\g2\data\callhome\audio\call_002.wav
+2026-09-26 10:59:48,507 | INFO | transcription.alignment | Aligned 123 ASR segments into 122 speaker segments; 1 had no speaker overlap
+2026-09-26 10:59:48,514 | INFO | __main__ | Persisted 122 aligned segments: D:\Me\g2\data\callhome\transcripts\call_002.json
+2026-09-26 10:59:48,516 | INFO | __main__ | Starting file: call_003.wav
+2026-09-26 10:59:48,558 | INFO | transcription.metadata | Loaded metadata: 151 intervals from D:\Me\g2\data\callhome\metadata\call_003.json
+2026-09-26 10:59:48,559 | INFO | transcription.transcribe | Transcribing audio: D:\Me\g2\data\callhome\audio\call_003.wav
+2026-09-26 10:59:49,930 | INFO | faster_whisper | Processing audio with duration 05:00.560
+2026-09-26 10:59:53,518 | INFO | faster_whisper | Detected language 'en' with probability 0.99
+2026-09-26 11:04:56,807 | INFO | transcription.transcribe | Transcription complete: 91 ASR segments from D:\Me\g2\data\callhome\audio\call_003.wav
+2026-09-26 11:04:56,831 | INFO | transcription.alignment | Aligned 91 ASR segments into 83 speaker segments; 8 had no speaker overlap
+2026-09-26 11:04:56,845 | INFO | __main__ | Persisted 83 aligned segments: D:\Me\g2\data\callhome\transcripts\call_003.json
+2026-09-26 11:04:56,847 | INFO | __main__ | Starting file: call_007.wav
+2026-09-26 11:04:56,892 | INFO | transcription.metadata | Loaded metadata: 176 intervals from D:\Me\g2\data\callhome\metadata\call_007.json
+2026-09-26 11:04:56,893 | INFO | transcription.transcribe | Transcribing audio: D:\Me\g2\data\callhome\audio\call_007.wav
+2026-09-26 11:04:59,279 | INFO | faster_whisper | Processing audio with duration 05:03.390
+2026-09-26 11:05:04,067 | INFO | faster_whisper | Detected language 'en' with probability 1.00
+2026-09-26 11:08:19,972 | INFO | transcription.transcribe | Transcription complete: 116 ASR segments from D:\Me\g2\data\callhome\audio\call_007.wav
+2026-09-26 11:08:20,003 | INFO | transcription.alignment | Aligned 116 ASR segments into 116 speaker segments; 0 had no speaker overlap
+2026-09-26 11:08:20,030 | INFO | __main__ | Persisted 116 aligned segments: D:\Me\g2\data\callhome\transcripts\call_007.json
+2026-09-26 11:08:20,034 | INFO | __main__ | Starting file: call_008.wav
+2026-09-26 11:08:20,412 | INFO | transcription.metadata | Loaded metadata: 186 intervals from D:\Me\g2\data\callhome\metadata\call_008.json
+2026-09-26 11:08:20,413 | INFO | transcription.transcribe | Transcribing audio: D:\Me\g2\data\callhome\audio\call_008.wav
+2026-09-26 11:08:21,125 | INFO | faster_whisper | Processing audio with duration 05:04.960
+2026-09-26 11:08:26,690 | INFO | faster_whisper | Detected language 'en' with probability 1.00
+2026-09-26 11:12:14,726 | INFO | transcription.transcribe | Transcription complete: 136 ASR segments from D:\Me\g2\data\callhome\audio\call_008.wav
+2026-09-26 11:12:14,755 | INFO | transcription.alignment | Aligned 136 ASR segments into 136 speaker segments; 0 had no speaker overlap
+2026-09-26 11:12:14,797 | INFO | __main__ | Persisted 136 aligned segments: D:\Me\g2\data\callhome\transcripts\call_008.json
+2026-09-26 11:12:14,798 | INFO | __main__ | Pipeline complete
+
+---- Chunking data ----
+2026-09-26 13:35:58,073 | INFO | __main__ | Chunking 8 transcript files
+2026-09-26 13:35:58,105 | INFO | transcription.chunking | Chunked 166 aligned segments into 51 chunks for call_000.wav
+2026-09-26 13:35:58,110 | INFO | __main__ | Persisted 51 chunks: D:\Me\g2\data\callhome\chunks\call_000.json
+2026-09-26 13:35:58,154 | INFO | transcription.chunking | Chunked 339 aligned segments into 147 chunks for call_001.wav
+2026-09-26 13:35:58,161 | INFO | __main__ | Persisted 147 chunks: D:\Me\g2\data\callhome\chunks\call_001.json
+2026-09-26 13:35:58,194 | INFO | transcription.chunking | Chunked 122 aligned segments into 52 chunks for call_002.wav
+2026-09-26 13:35:58,198 | INFO | __main__ | Persisted 52 chunks: D:\Me\g2\data\callhome\chunks\call_002.json
+2026-09-26 13:35:58,240 | INFO | transcription.chunking | Chunked 83 aligned segments into 47 chunks for call_003.wav
+2026-09-26 13:35:58,244 | INFO | __main__ | Persisted 47 chunks: D:\Me\g2\data\callhome\chunks\call_003.json
+2026-09-26 13:35:58,270 | INFO | transcription.chunking | Chunked 294 aligned segments into 129 chunks for call_004.wav
+2026-09-26 13:35:58,292 | INFO | __main__ | Persisted 129 chunks: D:\Me\g2\data\callhome\chunks\call_004.json
+2026-09-26 13:35:58,321 | INFO | transcription.chunking | Chunked 362 aligned segments into 108 chunks for call_005.wav
+2026-09-26 13:35:58,326 | INFO | __main__ | Persisted 108 chunks: D:\Me\g2\data\callhome\chunks\call_005.json
+2026-09-26 13:35:58,347 | INFO | transcription.chunking | Chunked 116 aligned segments into 40 chunks for call_007.wav
+2026-09-26 13:35:58,349 | INFO | __main__ | Persisted 40 chunks: D:\Me\g2\data\callhome\chunks\call_007.json
+2026-09-26 13:35:58,375 | INFO | transcription.chunking | Chunked 136 aligned segments into 47 chunks for call_008.wav
+2026-09-26 13:35:58,378 | INFO | __main__ | Persisted 47 chunks: D:\Me\g2\data\callhome\chunks\call_008.json
+2026-09-26 13:35:58,378 | INFO | __main__ | Chunking pipeline complete
+
+----- Loading chunks into DB ------
+2026-09-26 12:37:44,109 | INFO | __main__ | Loaded 51 chunks from D:\Me\g2\data\callhome\chunks\call_000.json
+2026-09-26 12:37:44,119 | INFO | __main__ | Loaded 52 chunks from D:\Me\g2\data\callhome\chunks\call_002.json
+2026-09-26 12:37:44,131 | INFO | __main__ | Loaded 47 chunks from D:\Me\g2\data\callhome\chunks\call_003.json
+2026-09-26 12:37:44,153 | INFO | __main__ | Loaded 40 chunks from D:\Me\g2\data\callhome\chunks\call_007.json
+2026-09-26 12:37:44,164 | INFO | __main__ | Loaded 47 chunks from D:\Me\g2\data\callhome\chunks\call_008.json
+2026-09-26 12:37:44,165 | INFO | __main__ | Using embedding model sentence-transformers/all-MiniLM-L6-v2
+2026-09-26 12:39:41,182 | INFO | sentence_transformers.base.model | No device provided, using cpu
+2026-09-26 12:39:42,315 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:39:42,339 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-09-26 12:39:42,592 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-26 12:39:42,592 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-26 12:39:42,613 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-09-26 12:39:42,615 | INFO | sentence_transformers.base.model | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-09-26 12:39:42,854 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:39:42,891 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-09-26 12:39:45,329 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307Temporary Redirect"
+2026-09-26 12:39:45,361 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2FREADME.md=&etag=%2244af2e3b0fa3a0b6239e48422972bf755f28fde0%22 "HTTP/1.1 200 OK"
+2026-09-26 12:39:45,623 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:39:45,644 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-09-26 12:39:45,905 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:39:45,927 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%2259d594003bf59880a884c574bf88ef7555bb0202%22 "HTTP/1.1 200 OK"
+2026-09-26 12:39:46,185 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+Loading weights: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 528.73it/s]
+2026-09-26 12:39:58,444 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 12:39:58,990 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 12:39:59,239 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 12:40:00,348 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 12:40:02,503 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:40:02,774 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c79f2b6a0cea6f4b564fed1938984bace9d30ff0%22 "HTTP/1.1 200 OK"
+2026-09-26 12:40:03,033 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:40:03,058 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-26 12:40:03,315 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:40:03,342 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-26 12:40:03,596 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:40:03,618 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c79f2b6a0cea6f4b564fed1938984bace9d30ff0%22 "HTTP/1.1 200 OK"
+2026-09-26 12:40:03,984 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-26 12:40:04,389 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-26 12:40:07,307 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 12:40:07,331 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22d1514c3162bbe87b343f565fadc62e6c06f04f03%22 "HTTP/1.1 200 OK"
+2026-09-26 12:40:07,573 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-09-26 12:40:07,682 | INFO | transcription.embeddings | Loaded embedding model: sentence-transformers/all-MiniLM-L6-v2
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 8/8 [00:03<00:00,  2.18it/s]
+2026-09-26 12:40:11,534 | INFO | transcription.embeddings | Generated 237 embeddings with dimension 384
+2026-09-26 12:40:14,091 | INFO | transcription.db | Applied database schema: D:\Me\g2\db\schema.sql
+2026-09-26 12:40:14,419 | INFO | transcription.db | Inserted or updated 237 chunks
+2026-09-26 12:40:14,446 | INFO | transcription.db | Storage verification: {'expected_count': 237, 'row_count': 237, 'min_dimension': 384, 'max_dimension': 384, 'null_speakers': 0, 'invalid_times': 0, 'dimension_expected': 384}
+2026-09-26 12:40:14,446 | INFO | __main__ | Final verification: {'expected_count': 237, 'row_count': 237, 'min_dimension': 384, 'max_dimension': 384, 'null_speakers': 0, 'invalid_times': 0, 'dimension_expected': 384}
+
+
+---- running retrieval lexical ----
+python -m app.search "rolling" --mode lexical --top-k 5
+2026-09-26 12:51:07,938 | INFO | app.retrieval | Lexical retrieval returned 3 candidates
+1. score=0.100000 file=call_008.wav speaker=B time=0.00-13.00
+   Yeah, so, and now I'm still trying to find somebody to finish teaching me rolling. I started to learn rolls last year and then we ran out of weather beforeI could really get it.
+2. score=0.100000 file=call_008.wav speaker=B time=18.12-31.04
+   Oh yeah, everybody, I know rolls in sea kayak. Well, no, I shouldn't say that, but yeah, I mean, sea kayak, rolling in a sea kayak makes a lot of sense because it's a hell of a lot more convenient to be able to roll your kayak back up again.
+3. score=0.100000 file=call_008.wav speaker=A time=13.00-18.12
+   Well, rolling in a sea kayak, I don't even know anybody around here that rolls in sea kayak.
+
+---- running retrieval mode hybrid ----
+2026-09-26 12:58:53,244 | INFO | __main__ | CLI search request: mode=hybrid top_k=5 candidate_count=20 rrf_k=60
+2026-09-26 12:58:53,245 | INFO | app.retrieval | Starting search: mode=hybrid top_k=5 candidate_count=20 rrf_k=60
+2026-09-26 12:58:53,245 | INFO | app.retrieval | Opening PostgreSQL connection from environment
+2026-09-26 12:58:54,137 | INFO | app.retrieval | Running lexical retrieval: candidates=20
+2026-09-26 12:58:54,332 | INFO | app.retrieval | Lexical retrieval returned 3 candidates
+2026-09-26 13:00:04,605 | INFO | sentence_transformers.base.model | No device provided, using cpu
+2026-09-26 13:00:05,739 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-26 13:00:05,740 | WARNING | huggingface_hub.utils._http | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-26 13:00:05,764 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:06,030 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:06,067 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:06,070 | INFO | sentence_transformers.base.model | Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-09-26 13:00:06,315 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:06,341 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig_sentence_transformers.json=&etag=%22fd1b291129c607e5d49799f87cb219b27f98acdf%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:07,600 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307Temporary Redirect"
+2026-09-26 13:00:07,623 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2FREADME.md=&etag=%2244af2e3b0fa3a0b6239e48422972bf755f28fde0%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:07,899 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:07,921 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fmodules.json=&etag=%22952a9b81c0bfd99800fabf352f69c7ccd46c5e43%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:08,204 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:08,226 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fsentence_bert_config.json=&etag=%2259d594003bf59880a884c574bf88ef7555bb0202%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:08,493 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 13:00:09,462 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:09,487 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 1337.75it/s]
+2026-09-26 13:00:11,447 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 13:00:12,296 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 13:00:12,548 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 13:00:13,297 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-26 13:00:13,546 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:13,570 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c79f2b6a0cea6f4b564fed1938984bace9d30ff0%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:13,827 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:13,852 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:14,107 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:14,131 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:14,388 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:14,414 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2Ftokenizer_config.json=&etag=%22c79f2b6a0cea6f4b564fed1938984bace9d30ff0%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:14,813 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-26 13:00:15,090 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-26 13:00:15,839 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-26 13:00:15,863 | INFO | httpx | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2Fmain%2F1_Pooling%2Fconfig.json=&etag=%22d1514c3162bbe87b343f565fadc62e6c06f04f03%22 "HTTP/1.1 200 OK"
+2026-09-26 13:00:16,102 | INFO | httpx | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-09-26 13:00:16,159 | INFO | transcription.embeddings | Loaded embedding model: sentence-transformers/all-MiniLM-L6-v2
+2026-09-26 13:00:16,159 | INFO | app.retrieval | Embedding query locally for hybrid retrieval
+Batches: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.18s/it]
+2026-09-26 13:00:17,355 | INFO | transcription.embeddings | Generated 1 embeddings with dimension 384
+2026-09-26 13:00:17,356 | INFO | app.retrieval | Running semantic retrieval: candidates=20 embedding_dimension=384
+2026-09-26 13:00:17,587 | INFO | app.retrieval | Semantic retrieval returned 20 candidates
+2026-09-26 13:00:17,587 | INFO | app.retrieval | RRF fused 23 candidate records into 20 unique chunks using k=60
+2026-09-26 13:00:17,587 | INFO | app.retrieval | Search complete: returned 5 results
+2026-09-26 13:00:17,588 | INFO | app.retrieval | Closing PostgreSQL connection
+2026-09-26 13:00:17,588 | INFO | __main__ | Rendering 5 results
+1. score=0.032787 file=call_008.wav speaker=B time=0.00-13.00
+   Yeah, so, and now I'm still trying to find somebody to finish teaching me rolling. I started to learn rolls last year and then we ran out of weather beforeI could really get it.
+2. score=0.031754 file=call_008.wav speaker=B time=18.12-31.04
+   Oh yeah, everybody, I know rolls in sea kayak. Well, no, I shouldn't say that, but yeah, I mean, sea kayak, rolling in a sea kayak makes a lot of sense because it's a hell of a lot more convenient to be able to roll your kayak back up again.
+3. score=0.031746 file=call_008.wav speaker=A time=13.00-18.12
+   Well, rolling in a sea kayak, I don't even know anybody around here that rolls in sea kayak.
+4. score=0.016129 file=call_008.wav speaker=A time=95.78-101.74
+   No, people don't roll it. If you fall, if you fall out, you just swim up to it and you clamber, clamber.
+5. score=0.015385 file=call_008.wav speaker=B time=91.30-95.78
+   So it goes out, yeah. But don't you have to be able to roll that?

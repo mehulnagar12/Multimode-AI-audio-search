@@ -1,0 +1,804 @@
+{
+  "query_count": 29,
+  "candidate_count": 20,
+  "methods": {
+    "lexical": {
+      "overall": {
+        "query_count": 29,
+        "recall@1": 0.09770114942528735,
+        "recall@3": 0.13505747126436782,
+        "recall@5": 0.13505747126436782,
+        "mrr": 0.20689655172413793
+      },
+      "by_type": {
+        "keyword": {
+          "query_count": 12,
+          "recall@1": 0.21527777777777776,
+          "recall@3": 0.3055555555555555,
+          "recall@5": 0.3055555555555555,
+          "mrr": 0.4166666666666667
+        },
+        "mixed": {
+          "query_count": 5,
+          "recall@1": 0.05,
+          "recall@3": 0.05,
+          "recall@5": 0.05,
+          "mrr": 0.2
+        },
+        "semantic": {
+          "query_count": 12,
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        }
+      },
+      "per_query": [
+        {
+          "query": "sea kayak rolling",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "How do you get back into an inflatable kayak after falling out?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "class three river kayaking waves",
+          "type": "mixed",
+          "recall@1": 0.25,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "mrr": 1.0
+        },
+        {
+          "query": "What happened during the Trinity River camping trip?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "blind date Grace France",
+          "type": "keyword",
+          "recall@1": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "What does the speaker think makes a relationship work instead of finding perfection?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "towels new house",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "Why is the baby being taken to a specialist?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "constipated",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why is the mother considering a trip even though childcare is difficult?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "job applications interview night classes",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "What caused the metro rail disruption and someone to be laid off?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "car transmission trouble in reverse",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "incision peroxide vitamin E",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "Why was the speaker frightened after the fall?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "air mail book letter Hanukkah",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "What happened while people were waiting to use a phone?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "yelling throwing things",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "lawn vacation money",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.5,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "What kind of dog is the new dog and how does it behave?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "third grade class size",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "flea bites in the kindergarten classroom",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "phone relationship moving to Chicago",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 0.5,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why did the speaker lose interest in the man she had been talking to?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "painting a room and having a rug delivered",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "married students having affairs in the same class",
+          "type": "keyword",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "What courses did the student take during the summer?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "back injury physical therapy doctor",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        },
+        {
+          "query": "What happened on the difficult anatomy and physiology test?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.0,
+          "mrr": 0.0
+        }
+      ]
+    },
+    "semantic": {
+      "overall": {
+        "query_count": 29,
+        "recall@1": 0.2712643678160919,
+        "recall@3": 0.5655172413793103,
+        "recall@5": 0.6729885057471264,
+        "mrr": 0.8632183908045976
+      },
+      "by_type": {
+        "keyword": {
+          "query_count": 12,
+          "recall@1": 0.3986111111111111,
+          "recall@3": 0.7347222222222222,
+          "recall@5": 0.8277777777777778,
+          "mrr": 1.0
+        },
+        "mixed": {
+          "query_count": 5,
+          "recall@1": 0.15,
+          "recall@3": 0.3666666666666666,
+          "recall@5": 0.6,
+          "mrr": 0.8
+        },
+        "semantic": {
+          "query_count": 12,
+          "recall@1": 0.19444444444444442,
+          "recall@3": 0.4791666666666666,
+          "recall@5": 0.548611111111111,
+          "mrr": 0.7527777777777778
+        }
+      },
+      "per_query": [
+        {
+          "query": "sea kayak rolling",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "How do you get back into an inflatable kayak after falling out?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.3333333333333333,
+          "mrr": 0.2
+        },
+        {
+          "query": "class three river kayaking waves",
+          "type": "mixed",
+          "recall@1": 0.25,
+          "recall@3": 0.25,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "What happened during the Trinity River camping trip?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "blind date Grace France",
+          "type": "keyword",
+          "recall@1": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "What does the speaker think makes a relationship work instead of finding perfection?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 0.3333333333333333,
+          "mrr": 0.5
+        },
+        {
+          "query": "towels new house",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why is the baby being taken to a specialist?",
+          "type": "semantic",
+          "recall@1": 0.25,
+          "recall@3": 0.5,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "constipated",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why is the mother considering a trip even though childcare is difficult?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "mrr": 0.5
+        },
+        {
+          "query": "job applications interview night classes",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 1.0,
+          "mrr": 0.5
+        },
+        {
+          "query": "What caused the metro rail disruption and someone to be laid off?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "car transmission trouble in reverse",
+          "type": "mixed",
+          "recall@1": 0.16666666666666666,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 0.3333333333333333,
+          "mrr": 1.0
+        },
+        {
+          "query": "incision peroxide vitamin E",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why was the speaker frightened after the fall?",
+          "type": "semantic",
+          "recall@1": 0.25,
+          "recall@3": 0.5,
+          "recall@5": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "query": "air mail book letter Hanukkah",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.75,
+          "recall@5": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "query": "What happened while people were waiting to use a phone?",
+          "type": "semantic",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "yelling throwing things",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "lawn vacation money",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.75,
+          "recall@5": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "query": "What kind of dog is the new dog and how does it behave?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "third grade class size",
+          "type": "keyword",
+          "recall@1": 0.2,
+          "recall@3": 0.4,
+          "recall@5": 0.6,
+          "mrr": 1.0
+        },
+        {
+          "query": "flea bites in the kindergarten classroom",
+          "type": "mixed",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "phone relationship moving to Chicago",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 0.5,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why did the speaker lose interest in the man she had been talking to?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 0.3333333333333333,
+          "mrr": 1.0
+        },
+        {
+          "query": "painting a room and having a rug delivered",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "married students having affairs in the same class",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.75,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "What courses did the student take during the summer?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "mrr": 0.3333333333333333
+        },
+        {
+          "query": "back injury physical therapy doctor",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.5,
+          "mrr": 0.5
+        },
+        {
+          "query": "What happened on the difficult anatomy and physiology test?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.5,
+          "mrr": 0.5
+        }
+      ]
+    },
+    "hybrid": {
+      "overall": {
+        "query_count": 29,
+        "recall@1": 0.2712643678160919,
+        "recall@3": 0.5655172413793103,
+        "recall@5": 0.6729885057471264,
+        "mrr": 0.8632183908045976
+      },
+      "by_type": {
+        "keyword": {
+          "query_count": 12,
+          "recall@1": 0.3986111111111111,
+          "recall@3": 0.7347222222222222,
+          "recall@5": 0.8277777777777778,
+          "mrr": 1.0
+        },
+        "mixed": {
+          "query_count": 5,
+          "recall@1": 0.15,
+          "recall@3": 0.3666666666666666,
+          "recall@5": 0.6,
+          "mrr": 0.8
+        },
+        "semantic": {
+          "query_count": 12,
+          "recall@1": 0.19444444444444442,
+          "recall@3": 0.4791666666666666,
+          "recall@5": 0.548611111111111,
+          "mrr": 0.7527777777777778
+        }
+      },
+      "per_query": [
+        {
+          "query": "sea kayak rolling",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "How do you get back into an inflatable kayak after falling out?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.0,
+          "recall@5": 0.3333333333333333,
+          "mrr": 0.2
+        },
+        {
+          "query": "class three river kayaking waves",
+          "type": "mixed",
+          "recall@1": 0.25,
+          "recall@3": 0.25,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "What happened during the Trinity River camping trip?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "blind date Grace France",
+          "type": "keyword",
+          "recall@1": 1.0,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "What does the speaker think makes a relationship work instead of finding perfection?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 0.3333333333333333,
+          "mrr": 0.5
+        },
+        {
+          "query": "towels new house",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why is the baby being taken to a specialist?",
+          "type": "semantic",
+          "recall@1": 0.25,
+          "recall@3": 0.5,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "constipated",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why is the mother considering a trip even though childcare is difficult?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "mrr": 0.5
+        },
+        {
+          "query": "job applications interview night classes",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 1.0,
+          "mrr": 0.5
+        },
+        {
+          "query": "What caused the metro rail disruption and someone to be laid off?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "car transmission trouble in reverse",
+          "type": "mixed",
+          "recall@1": 0.16666666666666666,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 0.3333333333333333,
+          "mrr": 1.0
+        },
+        {
+          "query": "incision peroxide vitamin E",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why was the speaker frightened after the fall?",
+          "type": "semantic",
+          "recall@1": 0.25,
+          "recall@3": 0.5,
+          "recall@5": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "query": "air mail book letter Hanukkah",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.75,
+          "recall@5": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "query": "What happened while people were waiting to use a phone?",
+          "type": "semantic",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "yelling throwing things",
+          "type": "keyword",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "lawn vacation money",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.75,
+          "recall@5": 0.75,
+          "mrr": 1.0
+        },
+        {
+          "query": "What kind of dog is the new dog and how does it behave?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "third grade class size",
+          "type": "keyword",
+          "recall@1": 0.2,
+          "recall@3": 0.4,
+          "recall@5": 0.6,
+          "mrr": 1.0
+        },
+        {
+          "query": "flea bites in the kindergarten classroom",
+          "type": "mixed",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.6666666666666666,
+          "recall@5": 0.6666666666666666,
+          "mrr": 1.0
+        },
+        {
+          "query": "phone relationship moving to Chicago",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 0.5,
+          "recall@5": 0.5,
+          "mrr": 1.0
+        },
+        {
+          "query": "Why did the speaker lose interest in the man she had been talking to?",
+          "type": "semantic",
+          "recall@1": 0.3333333333333333,
+          "recall@3": 0.3333333333333333,
+          "recall@5": 0.3333333333333333,
+          "mrr": 1.0
+        },
+        {
+          "query": "painting a room and having a rug delivered",
+          "type": "keyword",
+          "recall@1": 0.5,
+          "recall@3": 1.0,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "married students having affairs in the same class",
+          "type": "keyword",
+          "recall@1": 0.25,
+          "recall@3": 0.75,
+          "recall@5": 1.0,
+          "mrr": 1.0
+        },
+        {
+          "query": "What courses did the student take during the summer?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.25,
+          "mrr": 0.3333333333333333
+        },
+        {
+          "query": "back injury physical therapy doctor",
+          "type": "mixed",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.5,
+          "mrr": 0.5
+        },
+        {
+          "query": "What happened on the difficult anatomy and physiology test?",
+          "type": "semantic",
+          "recall@1": 0.0,
+          "recall@3": 0.25,
+          "recall@5": 0.5,
+          "mrr": 0.5
+        }
+      ]
+    }
+  }
+}

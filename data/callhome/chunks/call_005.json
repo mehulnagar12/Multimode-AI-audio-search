@@ -1,0 +1,974 @@
+[
+  {
+    "chunk_id": "chunk_9be30230bebc4d6c2c22",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 0.0,
+    "end_time": 2.0,
+    "text": "Pretty good. Yeah?"
+  },
+  {
+    "chunk_id": "chunk_09f380ebe7f351f21875",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 2.0,
+    "end_time": 11.36,
+    "text": "How about you? Busy, busy, busy. Yeah. I took some summer courses. I started in May. I took an English Lit for five weeks and I took Psych & Sociology, which I'm finishing up next week."
+  },
+  {
+    "chunk_id": "chunk_e3756ca6e612890d3acf",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 11.36,
+    "end_time": 12.36,
+    "text": "I can't wait."
+  },
+  {
+    "chunk_id": "chunk_9a50a769b77e4cc01e9b",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 12.36,
+    "end_time": 17.76,
+    "text": "Is it psychology, introduction, psychology? Yeah. And sociology is a lot of work."
+  },
+  {
+    "chunk_id": "chunk_179c3727606bd56eb622",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 17.76,
+    "end_time": 19.76,
+    "text": "Yeah. What kind of sociology?"
+  },
+  {
+    "chunk_id": "chunk_264b8ed164136965724c",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 19.76,
+    "end_time": 31.08,
+    "text": "It's just general sociology. Okay. You have to do journal write-ups and stuff, like grab articles on the paper about specific topics. I have to write a paper and hand it in by the end of next week."
+  },
+  {
+    "chunk_id": "chunk_583c94390a7faeb569e8",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 31.08,
+    "end_time": 32.08,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_833b3551fc3bd570da90",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 32.08,
+    "end_time": 40.08,
+    "text": "There's a lot of digging information. It has to go with it. It's a lot of work to it. We're psyched. You just have to say the chapters. Yeah. And take my tests. I've gotten A's on all my tests."
+  },
+  {
+    "chunk_id": "chunk_b153cfb1dd726712e11a",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 40.08,
+    "end_time": 41.08,
+    "text": "Good."
+  },
+  {
+    "chunk_id": "chunk_fdbd479075057e15cb56",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 41.08,
+    "end_time": 42.08,
+    "text": "So we've gotten A's for that."
+  },
+  {
+    "chunk_id": "chunk_bee6447da9f400ab7343",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 42.08,
+    "end_time": 44.08,
+    "text": "I know. I hate research."
+  },
+  {
+    "chunk_id": "chunk_65e3e48efdfcaa7313c9",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 44.08,
+    "end_time": 46.08,
+    "text": "It's hard. It's very hard."
+  },
+  {
+    "chunk_id": "chunk_012f6ca3173d37df3682",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 46.08,
+    "end_time": 48.08,
+    "text": "Well, it takes so much time."
+  },
+  {
+    "chunk_id": "chunk_896006fa3e7083e1ffec",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 48.08,
+    "end_time": 55.08,
+    "text": "Mm-hmm. And I've been working up until, like last week, I hurt my back picking up Shanley. Seven out of work the past two weeks."
+  },
+  {
+    "chunk_id": "chunk_a2a44a8bf34cb20ec689",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 55.08,
+    "end_time": 56.08,
+    "text": "Oh, you're kidding."
+  },
+  {
+    "chunk_id": "chunk_06c76a3b38142d3239a3",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 56.16,
+    "end_time": 59.16,
+    "text": "I'm going back Monday, though. Thank goodness."
+  },
+  {
+    "chunk_id": "chunk_3c1c03e04e81b7412989",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 59.16,
+    "end_time": 63.16,
+    "text": "Do you have to go through any physical therapy? Yeah, I'm doing that now. Okay."
+  },
+  {
+    "chunk_id": "chunk_e139f6041e997f3440c2",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 63.16,
+    "end_time": 67.16,
+    "text": "Yeah. I went last week, and I'm going three times this week. I see the doctor tomorrow."
+  },
+  {
+    "chunk_id": "chunk_e54e1607501c3a5f80b6",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 67.16,
+    "end_time": 68.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_26b1223d52163b5a16bc",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 68.16,
+    "end_time": 73.16,
+    "text": "So hopefully I'll get a note saying go back to work on Monday because I have no time to use, you know, for sick time and stuff."
+  },
+  {
+    "chunk_id": "chunk_ee67912910be9c30ee5d",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 73.16,
+    "end_time": 77.16,
+    "text": "Yeah, because you took time when you had your surgery on your knee, too, right?"
+  },
+  {
+    "chunk_id": "chunk_06860f16fa0d046e71e6",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 77.16,
+    "end_time": 80.16,
+    "text": "Mm-hmm. Exactly. And I used a lot of it up at that time."
+  },
+  {
+    "chunk_id": "chunk_8fc8962092638b202701",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 80.16,
+    "end_time": 81.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_9f0e29f12122b3a52102",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 81.16,
+    "end_time": 90.16,
+    "text": "So I have none left whatsoever. And I had to use it my last two vacation days because they make you do that now for some reason, which is fairly new, which really isn't fair."
+  },
+  {
+    "chunk_id": "chunk_88b814885300f08d7c69",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 90.16,
+    "end_time": 93.16,
+    "text": "What do you mean because you were out there?"
+  },
+  {
+    "chunk_id": "chunk_3d049ebffff9b06669d0",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 93.16,
+    "end_time": 102.16,
+    "text": "Well, I've been out all week, and I said, do I have any sick time? And she said, I have seven hours. And I said, well, just give me the seven hours. I'm sick. And then eight hours of holiday. So I have eight hours worth of pay."
+  },
+  {
+    "chunk_id": "chunk_876d15f2e67dc42ab125",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 102.16,
+    "end_time": 103.16,
+    "text": "That's it."
+  },
+  {
+    "chunk_id": "chunk_919574d18731aa6522cc",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 103.16,
+    "end_time": 125.16,
+    "text": "Mm-hmm. I said, don't use my vacation time. She told me she had to. Mm-hmm. And I had like two days left. Mm-hmm. Like 16 hours, which was going to cover me for at least a couple of days in August. So I wouldn't go without a check. Yeah. But they told me they had to pay me that 16 hours of vacation time, which is mandatory, which I think stinks. Yeah. You know? Mm-hmm. But I just can't wait to get back to work. Back to normal."
+  },
+  {
+    "chunk_id": "chunk_e4c829e35d26e7d98c02",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 125.16,
+    "end_time": 126.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_484b753d96c531383285",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 126.16,
+    "end_time": 131.16,
+    "text": "I like taking courses, and I really like it, but I don't like taking summer courses. I don't like two at a time."
+  },
+  {
+    "chunk_id": "chunk_282f26c46ef351c3bc01",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 131.16,
+    "end_time": 135.16,
+    "text": "Yeah. It's so cramped in for five weeks. Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_d67668d7a35520348067",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 135.16,
+    "end_time": 148.16,
+    "text": "Yeah. Two chapters we have to study for tomorrow. I only read one thoroughly, and the other one I've got to read and learn. So I've got to go to the library, and basically box myself in like a little cubicles and just read it and learn it that way."
+  },
+  {
+    "chunk_id": "chunk_8edadc9f398430f4a886",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 148.16,
+    "end_time": 149.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_b34e49ee6164b0468057",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 149.16,
+    "end_time": 162.16,
+    "text": "Because I can't really concentrate on some totally away from things. Yeah. Like I'm home on the TV on the other, and I can hear it. Right. I need to be totally isolated and have just everything block everything out. Mm-hmm. And so I'm away from studying."
+  },
+  {
+    "chunk_id": "chunk_9840bc3d6686fc6d1ebc",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 162.16,
+    "end_time": 163.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_1c8bd31212a2e2a1c9b3",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 163.16,
+    "end_time": 171.16,
+    "text": "I mean, I can't even study if I'm with Patrick. Because I'll read stuff. Yeah. I can read a book, but I can't study. Because I can't block everything out."
+  },
+  {
+    "chunk_id": "chunk_720cc0879213ec63c564",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 171.16,
+    "end_time": 174.16,
+    "text": "Yeah. So you guys are still seeing each other?"
+  },
+  {
+    "chunk_id": "chunk_f9d89f7fb0d1e6ee56aa",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 174.16,
+    "end_time": 178.16,
+    "text": "Yeah. It's weird because I called it after I wrote you. Now it's really bummed out."
+  },
+  {
+    "chunk_id": "chunk_5e55ce9068d63db75f7b",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 178.16,
+    "end_time": 179.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_1735266835fd1480f886",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 179.16,
+    "end_time": 198.16,
+    "text": "And we talked and stuff. And I totally missed him. I mean, I was crying on the phone. He was crying on the phone. Mm-hmm. Because he's going to miss me. He's going to miss you already. And it was like, you know, why are we doing this then? Yeah. We're going to read him, take more time, give him some more time. And like, evaluate it like six months, like in October."
+  },
+  {
+    "chunk_id": "chunk_0a3ad2d6040431e5a114",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 198.16,
+    "end_time": 199.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_2bc8ad3238a3004dcc3c",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 199.16,
+    "end_time": 229.16,
+    "text": "So we've been seeing each other up until, you know, we still haven't seen each other. But like, I don't like go to family things with his. Mm-hmm. Which is kind of weird. And I'm like, I wrote him a letter this past week and told him how this is not enough. You know, I said, you know this is going to happen at some point. You have to make a decision. Either you want us to be together or you don't. Yeah. And that's just the way it has to be. So this isn't like it's a new relationship with each other for 10 years. And we've gone the good, bad, and the ugly. Yeah."
+  },
+  {
+    "chunk_id": "chunk_7f5040a4c8b4682d0f3d",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 229.16,
+    "end_time": 243.16,
+    "text": "And we're still here because we love each other. So that should mean something. And that should show you, you know, that should be significant somehow. Mm-hmm. I think it is. But we're going to talk about some stuff on Friday. And we're spending the day together Sunday."
+  },
+  {
+    "chunk_id": "chunk_cfacb91bba5e47d9329e",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 243.16,
+    "end_time": 246.16,
+    "text": "Is he working now? No."
+  },
+  {
+    "chunk_id": "chunk_d8d547b63b9eb2bfd060",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 246.16,
+    "end_time": 248.16,
+    "text": "In fact, he got laid off. Did you know that?"
+  },
+  {
+    "chunk_id": "chunk_a1f6040385d8fe59edb4",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 248.16,
+    "end_time": 249.16,
+    "text": "I think."
+  },
+  {
+    "chunk_id": "chunk_b2151c045788575c172b",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 249.16,
+    "end_time": 252.16,
+    "text": "I'm not sure if he got laid off. He was laid off when grandma died. I think he was."
+  },
+  {
+    "chunk_id": "chunk_1ac669e2f6d7cb3b6b8e",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 252.16,
+    "end_time": 256.15999999999997,
+    "text": "Yeah. I think he was. But he was going to, I don't know, he was going to do something."
+  },
+  {
+    "chunk_id": "chunk_5453f681450750954645",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 256.15999999999997,
+    "end_time": 272.15999999999997,
+    "text": "He had gotten some money for school. Yeah. So he took English comp, which you got an A- and I believe. Because he really, he's a really good writer. Uh-huh. He really writes from his soul. And he's taken of all things, anatomy and physiology, which is the toughest thing he could take. Yeah."
+  },
+  {
+    "chunk_id": "chunk_446644e7d385f6e05fa6",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 272.15999999999997,
+    "end_time": 273.15999999999997,
+    "text": "I know."
+  },
+  {
+    "chunk_id": "chunk_205384cc52554b1acd6f",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 273.15999999999997,
+    "end_time": 290.16,
+    "text": "And he's, I don't have a hard time with it, but he's busting his butt. I mean, he's done some really good grades and some just mediocre grades. So he wanted to prove to himself he could do it. So he took the hardest thing he had to take forever. And next time he'll just be doing the A and P of the alcohol abusive person."
+  },
+  {
+    "chunk_id": "chunk_cf02bddad39346ed95a4",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 290.16,
+    "end_time": 291.16,
+    "text": "Uh-huh."
+  },
+  {
+    "chunk_id": "chunk_5becde55c144d818a74d",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 291.16,
+    "end_time": 316.16,
+    "text": "So he told me today he used to get his test back. He thought he'd do really well, but he got 68. And he's so ticked because he made some careless errors. He skipped one question and went on to the next. But then when he wrote the letters in, he put it on that particular one. And then when he answered their questions, the other three were just off because they weren't in the right spot. Like the last four, which were right, which he would have had credit for, were wrong because he put them in the wrong space."
+  },
+  {
+    "chunk_id": "chunk_41b03f431af1d50859a3",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 316.16,
+    "end_time": 317.16,
+    "text": "Right."
+  },
+  {
+    "chunk_id": "chunk_ce637556f110459ccd79",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 317.16,
+    "end_time": 319.16,
+    "text": "And he was really ticked off at himself."
+  },
+  {
+    "chunk_id": "chunk_8faf6c48a47b19a1c180",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 319.16,
+    "end_time": 320.16,
+    "text": "Is that passing?"
+  },
+  {
+    "chunk_id": "chunk_73e2e8e4a2d12952fec0",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 320.16,
+    "end_time": 323.16,
+    "text": "Yeah. 68 is passing. I mean, a D is passing."
+  },
+  {
+    "chunk_id": "chunk_5aa3f4bf2f95fcd589ec",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 323.16,
+    "end_time": 334.16,
+    "text": "Yeah. We'll see if there's different scales that people have for grades. And sometimes that is, you know, like a, I don't know. I don't remember how it goes. But it's passing."
+  },
+  {
+    "chunk_id": "chunk_97b59091ff292cea8250",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 334.16,
+    "end_time": 344.16,
+    "text": "But for some particular programs, you have to have at least a C or better. Mm-hmm. So I was lucky. I got a B in English lit. That was like the first time I've written a paper in like eight years."
+  },
+  {
+    "chunk_id": "chunk_8c9fb6e274825dd77fef",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 344.16,
+    "end_time": 347.16,
+    "text": "Was that an interesting class? I liked it."
+  },
+  {
+    "chunk_id": "chunk_fadedd22bff7d53f5059",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 347.16,
+    "end_time": 349.16,
+    "text": "Yeah. I didn't like the poetry."
+  },
+  {
+    "chunk_id": "chunk_9454a0597ec6d4075f11",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 349.16,
+    "end_time": 350.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_f7e10dfafd9c477aaf27",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 350.16,
+    "end_time": 354.16,
+    "text": "You're having an endless poetry. But I liked English literature. I liked endless stories. Yeah."
+  },
+  {
+    "chunk_id": "chunk_d2fdfae955be9654203a",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 354.16,
+    "end_time": 355.16,
+    "text": "And I enjoyed that part."
+  },
+  {
+    "chunk_id": "chunk_17a72e2ead0b1db82139",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 355.16,
+    "end_time": 376.16,
+    "text": "And that part, once I got the hang of it, was okay. Yeah. My first paper I got a C on. And I knew the story really well. It was intelligently written. But I didn't like dig into it. In the second paper I got a B minus. And then I didn't really like the author of that story either. I didn't really understand the story so well. Yeah. Called The Misfit. And I liked the author Flannery O'Connery."
+  },
+  {
+    "chunk_id": "chunk_3d74ce28a4f25cdfe7ae",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 376.16,
+    "end_time": 380.16,
+    "text": "Oh, I've heard of them. But I've never read anything."
+  },
+  {
+    "chunk_id": "chunk_5531c35acc5156f9d9f9",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 380.16,
+    "end_time": 385.16,
+    "text": "And the third one we did was Hamlet, which I loved. I love Shakespeare. Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_fe18ef9111e1b1577b22",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 385.16,
+    "end_time": 387.16,
+    "text": "So I had to write a piece on Hamlet. I had to understand, I think."
+  },
+  {
+    "chunk_id": "chunk_eacbc59829f20c19c16d",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 387.16,
+    "end_time": 396.16,
+    "text": "It is because you have to keep going down the footnotes and learning what the words mean and stuff. But we also watched the film. I got the tape, the movie with Mel Gibson."
+  },
+  {
+    "chunk_id": "chunk_0f0703da85e9876c17e0",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 396.16,
+    "end_time": 397.16,
+    "text": "And I watched that."
+  },
+  {
+    "chunk_id": "chunk_9a6ae633d638c37e6a33",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 397.16,
+    "end_time": 415.16,
+    "text": "And I really enjoyed that kind of thing. Because I wrote a good paper. I made it my own little poem at the end of it. I got a B plus. Because I added more to it, you know? Yeah. It was really well done. And that was the easiest paper for me to write. I don't know if it's because I had done two before that or I just really enjoyed the materials working with it."
+  },
+  {
+    "chunk_id": "chunk_75859eead1b9b971f4b0",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 415.16,
+    "end_time": 417.16,
+    "text": "Yeah. That helped."
+  },
+  {
+    "chunk_id": "chunk_7ab0134182ad601674af",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 417.16,
+    "end_time": 421.16,
+    "text": "I had a really good grade in that. And I got a B on the course. But I worked really hard for it. I mean, it wasn't easy."
+  },
+  {
+    "chunk_id": "chunk_a203eca43174a4464e05",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 421.16,
+    "end_time": 422.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_2a7a94c5e647f9da39b9",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 422.16,
+    "end_time": 432.16,
+    "text": "You know? And then for psychology and sociology, I got three A's on my test for psychology. I'm taking one next tomorrow. And then one next Wednesday on my final grade."
+  },
+  {
+    "chunk_id": "chunk_c3f324812b8114232d99",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 432.16,
+    "end_time": 433.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_4c6abb0be333a6b6830d",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 433.16,
+    "end_time": 442.16,
+    "text": "And then for my midterm and sociology, I got an A. And then I'm going to take my other final next week. So sociology is a lot of work."
+  },
+  {
+    "chunk_id": "chunk_4bf603e7b99554bd46c5",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 442.16,
+    "end_time": 444.16,
+    "text": "Are you going to take any more classes after this?"
+  },
+  {
+    "chunk_id": "chunk_4e55b216a4840a39f062",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 444.16,
+    "end_time": 458.16,
+    "text": "Yeah. I'd like to take an introduction to art or history or take a philosophy. And maybe, I don't even know if I want to tackle a Spanish yet. I have to have a language, but I don't really know if I want to do it now."
+  },
+  {
+    "chunk_id": "chunk_9ce93c10271cc88f9af6",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 458.16,
+    "end_time": 469.16,
+    "text": "I think I'm going to take it. Do you guys have telecourses? Do you know what those are? What are they? Telecourses. It's like you get a video and you just, you know, watch the video at home."
+  },
+  {
+    "chunk_id": "chunk_2c858a3336fd908ecf3c",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 469.16,
+    "end_time": 470.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_e0bae673e56d2ffd36cf",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 470.16,
+    "end_time": 479.16,
+    "text": "And you do your own reading and the work and stuff at home. And then you go in. However, so often they have a schedule set up to the school and take your test."
+  },
+  {
+    "chunk_id": "chunk_3eaf2f46d4a9761079a0",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 479.16,
+    "end_time": 480.16,
+    "text": "Oh, really?"
+  },
+  {
+    "chunk_id": "chunk_34721b3344b20dc48454",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 480.16,
+    "end_time": 490.16,
+    "text": "It's like in a testing center. Uh-huh. And I'm going to try that since I took, you know, a lot of French in high school. Yeah. I thought maybe it wouldn't be too hard to do it that way. I'm going to try it."
+  },
+  {
+    "chunk_id": "chunk_ebb5d84494165dab529e",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 490.16,
+    "end_time": 506.16,
+    "text": "Pretty interesting. Yeah. We did a study evaluation on us. We had to write down on psychology. And it turned out that I'm a, how would you call it? Something observer. Reflective observer in my study."
+  },
+  {
+    "chunk_id": "chunk_f8946cafbe50f8da79e2",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 506.16,
+    "end_time": 507.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_c6fb0457eb7ed90a2ea6",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 507.16,
+    "end_time": 515.1600000000001,
+    "text": "When I do things, I kind of like sit back and watch and stuff. And I can be very quiet in the class. I don't participate a lot in the class. And I pay attention. I'm always there."
+  },
+  {
+    "chunk_id": "chunk_25f2fba94a9ed0f12501",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 515.1600000000001,
+    "end_time": 516.1600000000001,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_43a63593cd6d0e57d0e6",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 516.1600000000001,
+    "end_time": 517.1600000000001,
+    "text": "They don't like to say a lot of stuff."
+  },
+  {
+    "chunk_id": "chunk_6193c3a290d9baa98886",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 517.1600000000001,
+    "end_time": 518.1600000000001,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_2b39636208e95ac29607",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 518.1600000000001,
+    "end_time": 528.1600000000001,
+    "text": "Not in the psychology class. I don't. I just don't feel comfortable with it. Like with the people that are in there. Yeah. So I just, I listen. So I know everything. I comprehend everything. I know it."
+  },
+  {
+    "chunk_id": "chunk_f281cf15fa91c8ccf0c4",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 528.16,
+    "end_time": 529.16,
+    "text": "Is there younger students?"
+  },
+  {
+    "chunk_id": "chunk_081efca69023a01317b4",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 529.16,
+    "end_time": 530.16,
+    "text": "Mm-hmm."
+  },
+  {
+    "chunk_id": "chunk_e12534822af5c21e3e58",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 530.16,
+    "end_time": 532.16,
+    "text": "Or just, are they mostly adults?"
+  },
+  {
+    "chunk_id": "chunk_6c708394ad9c0c00bf0e",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 532.16,
+    "end_time": 537.16,
+    "text": "There's a mix. There's some high, I'm not high school kids. Like, 19, 20-year-old."
+  },
+  {
+    "chunk_id": "chunk_d983b9ee6b09bdc1e8e4",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 537.16,
+    "end_time": 538.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_1dd7fc0a8e1b42903e2d",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 538.16,
+    "end_time": 542.16,
+    "text": "And there's some married women in there. And older women. Mm-hmm. And younger kids."
+  },
+  {
+    "chunk_id": "chunk_e7aaee85accded318f81",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 542.16,
+    "end_time": 543.16,
+    "text": "There's a couple of black people in there."
+  },
+  {
+    "chunk_id": "chunk_00f7bdbbccaf6c2fe814",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 543.16,
+    "end_time": 545.16,
+    "text": "Yeah. That sounds about, you know, it's like a good mix."
+  },
+  {
+    "chunk_id": "chunk_c25d4ccb2c9db18826a8",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 545.16,
+    "end_time": 546.16,
+    "text": "It's a good mix."
+  },
+  {
+    "chunk_id": "chunk_c82642f5844130cabc59",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 546.16,
+    "end_time": 575.16,
+    "text": "Yeah. But it seems like this kid who, and I'm saying, oh, I'm not being prejudice-based black. And he's like always questioning the teachers and stuff. And he thinks like, well, your father, you know, if you were told that you were brought up in the house, he'd do what he says. And that's okay to learn that and stuff. And that's okay to do with your kids. And she's trying to teach them that it's not okay to do that. Mm-hmm. It's not how you build someone's self-respect and do things like that. And it's like a couple of people like to argue with her and like say things that are really ignorant and stupid. Yeah."
+  },
+  {
+    "chunk_id": "chunk_2cc3689ae25cd436ac97",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 575.16,
+    "end_time": 578.16,
+    "text": "Well, she gets to be the teacher. She wants to do something."
+  },
+  {
+    "chunk_id": "chunk_48816489a7fddc798572",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 578.16,
+    "end_time": 589.16,
+    "text": "Yeah. So, but it's good. I mean, it's been interesting. They had a hypnotist's come in the other day. But I didn't want to do it just because I was very skeptical of it and not really enthusiastic about it."
+  },
+  {
+    "chunk_id": "chunk_cbb0ad565001fe259595",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 589.16,
+    "end_time": 590.16,
+    "text": "Yeah."
+  },
+  {
+    "chunk_id": "chunk_11db92ecfa6a2a97f5b1",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 590.16,
+    "end_time": 597.16,
+    "text": "I didn't feel comfortable. Like I was more interested in watching people around me. Mm-hmm. Like if they really kind of like really got into it."
+  },
+  {
+    "chunk_id": "chunk_bf84d5c77cdb2e7248c5",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 597.16,
+    "end_time": 603.16,
+    "text": "I don't know if I would ever do it. I'd be real curious to see whether I could be hypnotized. I don't know if I would."
+  },
+  {
+    "chunk_id": "chunk_d3b8736566d907f3b891",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "B",
+    "start_time": 603.16,
+    "end_time": 604.16,
+    "text": "Oh, I would, too."
+  },
+  {
+    "chunk_id": "chunk_3c94461a2219f1ceecec",
+    "conversation_id": "call_005",
+    "source_file": "call_005.wav",
+    "speaker_id": "A",
+    "start_time": 604.16,
+    "end_time": 605.16,
+    "text": "I would be afraid or..."
+  }
+]

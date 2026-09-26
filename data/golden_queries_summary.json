@@ -1,0 +1,14 @@
+{
+  "query_count": 29,
+  "count_by_type": {
+    "keyword": 12,
+    "semantic": 12,
+    "mixed": 5
+  },
+  "queries_with_multiple_relevant_chunks": 28,
+  "source_chunk_files": 8,
+  "source_chunk_count": 621,
+  "ground_truth_confidence": 0.95,
+  "confidence_basis": "All 29 queries were manually grounded in inspected transcript text, and every labeled chunk ID was validated against the updated chunk files. ASR wording remains the only material uncertainty.",
+  "note": "Labels were selected from actual persisted transcript text; retrieval results were not used."
+}
