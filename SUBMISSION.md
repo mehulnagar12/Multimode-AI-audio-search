@@ -173,6 +173,8 @@ stage-specific prompts and constraints, including:
 - do not fabricate measurements or tune retrieval against the golden set
   without diagnosis.
 
+see the [agent notes](AGENT_NOTES.md)
+
 The agent's suggestions and corrections were reviewed during development. The
 accepted decisions included 30-second maximum chunks, one-second merge gaps,
 maximum-overlap speaker assignment, 384-dimensional local embeddings, exact
