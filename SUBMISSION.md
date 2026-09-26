@@ -116,25 +116,20 @@ compatible.
 
 ## Measured evaluation
 
-The recorded report uses 29 queries and 20 candidates per retriever.
+The latest report uses 29 queries and 20 candidates per retriever.
 Recall values are macro-averages across queries.
 
 | Method | Recall@1 | Recall@3 | Recall@5 | MRR |
 |---|---:|---:|---:|---:|
-| Lexical | 0.0977 | 0.1351 | 0.1351 | 0.2069 |
+| Lexical | 0.1494 | 0.2730 | 0.3218 | 0.4466 |
 | Semantic | 0.2713 | 0.5655 | 0.6730 | 0.8632 |
-| Hybrid | 0.2713 | 0.5655 | 0.6730 | 0.8632 |
+| Hybrid | 0.2385 | 0.4552 | 0.5626 | 0.7793 |
 
-Hybrid did not provide measurable improvement over semantic retrieval in this
-run. The likely issue is lexical candidate coverage: several queries describe
-information distributed across multiple chunks, while PostgreSQL full-text
-matching requires the query terms to be present in an individual chunk. More
-specifically, the schema and retrieval code use the `simple` text-search
-configuration, which keeps stop words and does not stem terms, while
-`websearch_to_tsquery` requires every query word to match. All 12 semantic
-queries in the recorded report had zero lexical hits, so hybrid collapsed to
-semantic retrieval.
-
+The schema and retrieval code use the `simple` text-search configuration,
+which keeps stop words and does not stem terms, while strict
+`websearch_to_tsquery` requires every query word to match. The new token-level
+`OR` fallback improved lexical retrieval but introduced noisier candidates
+into RRF, so hybrid currently underperforms semantic retrieval.
 The semantic MRR of 0.8632 alongside Recall@1 of 0.2713 is consistent. MRR
 only measures the first relevant result's rank; Recall@1 measures how many of
 all relevant chunks appear in the first result. Twenty-eight of 29 queries
@@ -148,7 +143,7 @@ even when other relevant chunks are lower.
 | Persisted ASR transcripts | `data/callhome/transcripts/` | Timestamped transcript JSON files produced by the transcription pipeline; existing files are skipped on later runs unless `--force` is used. |
 | Speaker-aware chunks | `data/callhome/chunks/` | 621 chunks across 8 conversation files, with deterministic IDs, speaker IDs, timestamps, and text. `call_006` and `call_009` are not present in this output directory yet. |
 | Golden evaluation queries | `data/golden_queries.json` | 29 manually grounded queries whose relevant IDs were checked against actual chunk text. |
-| Evaluation report | `data/evaluation_report.json` and `data/evaluation_dashboard_latest.html` | Recorded lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
+| Evaluation report | `data/evaluation_report.json` and `data/evaluation_dashboard_latest.html` | Latest lexical, semantic, and hybrid Recall@1/3/5 and MRR results. |
 | PostgreSQL chunk storage | `transcript_chunks` table | An ingestion verification run stored 237 chunks with 384-dimensional embeddings, zero null speakers, and zero invalid timestamps. This is an earlier recorded ingestion result, not a claim that all 621 current chunks were re-ingested. |
 
 Search output is printed to the terminal by `app.search`. Each ranked result

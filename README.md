@@ -91,24 +91,23 @@ The golden queries are in `data/golden_queries.json`. The evaluator in
 and reports macro-average Recall@1, Recall@3, Recall@5, and MRR overall and by
 query type.
 
-The measured report in `data/evaluation_report.json` contains 29 queries with
+The latest measured report in `data/evaluation_report.json` contains 29 queries with
 20 candidates per retriever:
 
 | Method | Recall@1 | Recall@3 | Recall@5 | MRR |
 |---|---:|---:|---:|---:|
-| lexical | 0.0977 | 0.1351 | 0.1351 | 0.2069 |
+| lexical | 0.1494 | 0.2730 | 0.3218 | 0.4466 |
 | semantic | 0.2713 | 0.5655 | 0.6730 | 0.8632 |
-| hybrid | 0.2713 | 0.5655 | 0.6730 | 0.8632 |
+| hybrid | 0.2385 | 0.4552 | 0.5626 | 0.7793 |
 
 This is a small manually labeled dataset, so the numbers are directional rather
-than a production-quality benchmark. Hybrid did not add measurable benefit in
-this run. The current schema uses PostgreSQL's `simple` text-search
-configuration, which does not stem words or remove stop words. In addition,
-`websearch_to_tsquery` requires the query terms to match the same chunk. As a
-result, question-style queries can produce no lexical candidates; all 12
-semantic queries in this report had zero lexical hits, so hybrid collapsed to
-the semantic ranking. Possible additional metrics include nDCG, precision@K,
-hit rate, and per-conversation coverage.
+than a production-quality benchmark. The current schema uses PostgreSQL's
+`simple` text-search configuration, which does not stem words or remove stop
+words. Strict `websearch_to_tsquery` requires the query terms to match the same
+chunk. The new token-level `OR` fallback improves lexical coverage, but its
+noisier candidates currently reduce hybrid performance below semantic search.
+Possible additional metrics include nDCG, precision@K, hit rate, and
+per-conversation coverage.
 
 The semantic MRR of 0.8632 alongside Recall@1 of 0.2713 is not contradictory:
 MRR measures the rank of the first relevant chunk, while Recall@1 divides the
