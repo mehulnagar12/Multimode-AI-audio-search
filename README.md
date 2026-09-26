@@ -1,6 +1,6 @@
-# CALLHOME Local Hybrid Search PoC
+# AI audio search
 
-This project builds a local search pipeline over timestamped CALLHOME speech.
+This project builds a local search pipeline over timestamped conversation data.
 The current persisted chunk set contains 621 chunks from 8 conversations.
 
 For first-time installation, see the [setup guide](setup.md).
@@ -19,13 +19,13 @@ For first-time installation, see the [setup guide](setup.md).
 ## Architecture
 
 ```text
-CALLHOME WAV + metadata
+Audio WAV + metadata
         |
         v
 Local faster-whisper ASR
         |
         v
-CALLHOME ground-truth speaker alignment
+ground-truth speaker alignment
         |
         v
 Speaker-aware time-based chunks
@@ -53,7 +53,7 @@ Speaker-aware time-based chunks
   faster-whisper CTranslate2 model. Transcript JSON is persisted so search
   does not retranscribe audio.
 - Speaker alignment: `transcription/alignment.py` assigns each ASR segment to
-  the CALLHOME speaker interval with maximum temporal overlap.
+  the speaker interval with maximum temporal overlap.
 - Chunking: `transcription/chunking.py` merges adjacent same-speaker segments
   up to 30 seconds when the gap is at most 1 second. It never crosses a
   speaker boundary and produces deterministic chunk IDs.
@@ -68,7 +68,7 @@ Speaker-aware time-based chunks
 - RRF: `app/retrieval.py` combines independently ranked lexical and semantic
   candidate lists using `1 / (k + rank)`, with default `k=60`. Raw lexical and
   cosine scores are not added together.
-- Dataset: the CALLHOME two-speaker conversations are used because they provide
+- Dataset: the two-speaker conversations are used because they provide
   real conversational audio together with verified speaker intervals and
   timestamps, allowing speaker-aware alignment without adding diarization to
   this proof of concept. For production audio without speaker labels, a
